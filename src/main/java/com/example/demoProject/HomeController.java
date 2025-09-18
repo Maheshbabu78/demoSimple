@@ -3,12 +3,12 @@ package com.example.demoProject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@Controller
+@RestController
 public class HomeController {
 	
-	@GetMapping("/")
+	@GetMapping("/hello")
 	public String getHomePage() {
-		return "index";
+		return "Hello world from spring boot";
 	}
 
 }
